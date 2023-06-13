@@ -4,7 +4,7 @@ import './bookmarks/boundary/List.js';
 import store from "./store.js";
 import { save } from "./localstorage/control/StorageControl.js";
 
-store.subscribe(_ => { 
+store.subscribe(_ => {
     const state = store.getState();
     save(state);
 })
